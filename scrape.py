@@ -31,5 +31,5 @@ url = "https://www.apple.com/legal/privacy/en-ww/"
 visible_text = get_text_from_js_page(url)
 
 # Save to file
-with open("cache.txt", "w", encoding="utf-8") as f:
+with open("example.txt", "w", encoding="utf-8") as f:
     f.write(visible_text)
