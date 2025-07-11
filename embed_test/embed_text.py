@@ -17,6 +17,7 @@ with open("embed_test/embeddings.txt", "w", encoding="utf-8") as f:
         f.write(",".join(f"{x:.6f}" for x in embedding) + "\n")
         f.write("\n" + "-" * 80 + "\n\n")
 
+# Creating Sparse Embeddings
 sparse_model = SparseTextEmbedding(model_name="prithivida/Splade_PP_en_v1")
 sparse_embeddings = list(sparse_model.embed(texts))
 
