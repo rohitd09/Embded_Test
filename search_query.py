@@ -9,7 +9,7 @@ dense_model = TextEmbedding(model_name="BAAI/bge-small-en-v1.5")
 sparse_model = SparseTextEmbedding(model_name="prithivida/Splade_PP_en_v1")
 
 # 3. Define your search query
-query_text = "What personal data is collected?"
+query_text = "How long do you keep user data?"
 
 # 4. Embed the query
 query_dense = list(dense_model.embed([query_text]))[0]
